@@ -4,9 +4,15 @@ pageextension 50101 "AIR Spoiled Item List" extends "Item List" //31
     {
         addafter(Inventory)
         {
-            field(Spoiled; "AIR Spoiled")
+            //field(Spoiled; "AIR Spoiled")
+            //{
+            //    Caption = 'Spoiled';
+            //    ApplicationArea = All;
+            //}
+
+            field("AIR Quality Level"; "AIR Quality Level")
             {
-                Caption = 'Spoiled';
+                Caption = 'Quality Level';
                 ApplicationArea = All;
             }
 
