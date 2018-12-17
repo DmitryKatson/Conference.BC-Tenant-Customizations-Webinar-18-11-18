@@ -8,7 +8,7 @@
             "server": "http://BC-Current-US",
             "serverInstance": "NAV",
             "authentication": "UserPassword",
-            "startupObjectId": 22,
+            "startupObjectId": 31,
             "startupObjectType": "Page",
             "breakOnError": true
         }

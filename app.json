@@ -1,6 +1,6 @@
 {
   "id": "be6aec25-8d2f-4892-93ec-107b7adf0e29",
-  "name": "BC-Tenant-Customizations-Webinar-18-11-18",
+  "name": "Fresh Food",
   "publisher": "Dmitry Katson",
   "brief": "",
   "description": "",
@@ -9,7 +9,7 @@
   "EULA": "",
   "help": "",
   "url": "",
-  "logo": "",
+  "logo": "./logo/freshfood-logo.jpg",
   "capabilities": [],
   "dependencies": [],
   "screenshots": [],
