@@ -4,7 +4,7 @@ enum 50100 "AIR Quality Level"
 
     value(0; None)
     {
-        Caption = ' '; //
+        Caption = ' ';
     }
     value(1; Fresh)
     {
