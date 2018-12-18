@@ -6,6 +6,7 @@ codeunit 50105 "AIR Upgrade To 3.0.0.0"
             exit;
 
         PopulateDefaultCustomVisionUriAndKey();
+        EnableWebServiceCallsInSandbox();
     end;
 
     local procedure CheckIfInstallingAppVersionCompatibleWithUpgradeCodeunit(): Boolean
@@ -32,6 +33,23 @@ codeunit 50105 "AIR Upgrade To 3.0.0.0"
             Modify(true)
         end;
     end;
+
+    procedure EnableWebServiceCallsInSandbox()
+    var
+        NavAppSetting: Record "NAV App Setting";
+        TenantManagement: Codeunit "Tenant Management";
+        AppInfo: ModuleInfo;
+    begin
+        NavApp.GetCurrentModuleInfo(AppInfo);
+
+        if TenantManagement.IsSandbox() then begin
+            NavAppSetting."App ID" := AppInfo.Id();
+            NavAppSetting."Allow HttpClient Requests" := true;
+            if not NavAppSetting.Insert() then
+                NavAppSetting.Modify();
+        end;
+    end;
+
 
 
 
