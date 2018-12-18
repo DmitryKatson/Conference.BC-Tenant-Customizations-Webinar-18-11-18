@@ -5,10 +5,10 @@
             "type": "al",
             "request": "launch",
             "name": "Your own server",
-            "server": "http://BC-Current-US",
+            "server": "http://BC-Current-CA",
             "serverInstance": "NAV",
             "authentication": "UserPassword",
-            "startupObjectId": 31,
+            "startupObjectId": 50100,
             "startupObjectType": "Page",
             "breakOnError": true,
             "schemaUpdateMode": "Synchronize"
