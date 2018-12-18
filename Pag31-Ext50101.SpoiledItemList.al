@@ -9,7 +9,6 @@ pageextension 50101 "AIR Spoiled Item List" extends "Item List" //31
             //    Caption = 'Spoiled';
             //    ApplicationArea = All;
             //}
-
             field("AIR Quality Level"; "AIR Quality Level")
             {
                 Caption = 'Quality Level';
