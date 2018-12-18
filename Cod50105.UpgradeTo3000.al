@@ -29,6 +29,7 @@ codeunit 50105 "AIR Upgrade To 3.0.0.0"
             InsertIfNotExists();
             validate(Uri, 'https://southcentralus.api.cognitive.microsoft.com/customvision/v2.0/Prediction/08b99585-0b43-40b5-b811-b3701c8d4d1e/image');
             Validate("Prediction-Key", 'c90050391f5747aa88bb6d9befb4364d');
+            Modify(true)
         end;
     end;
 

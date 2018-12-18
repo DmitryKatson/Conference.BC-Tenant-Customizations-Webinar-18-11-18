@@ -7,6 +7,7 @@ page 50100 "AIR Custom Vision Setup"
     InsertAllowed = false;
     DeleteAllowed = false;
     UsageCategory = Administration;
+    ApplicationArea = All;
 
     layout
     {
