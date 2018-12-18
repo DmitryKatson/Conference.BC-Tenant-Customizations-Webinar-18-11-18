@@ -20,7 +20,8 @@ codeunit 50103 "AIR Upgrade codeunit"
 
     trigger OnUpgradePerCompany()
     begin
-        OnUpgradePerCompanyToVersion_2_0_0_0();
+        //OnUpgradePerCompanyToVersion_2_0_0_0();
+        OnUpgradePerCompanyToVersion_3_0_0_0();
 
     end;
 
@@ -34,12 +35,20 @@ codeunit 50103 "AIR Upgrade codeunit"
 
     end;
 
-    local procedure OnUpgradePerCompanyToVersion_2_0_0_0()
+    // local procedure OnUpgradePerCompanyToVersion_2_0_0_0()
+    // var
+    //     UpgradeTo2Version: Codeunit "AIR Upgrade To 2.0.0.0";
+    // begin
+    //     UpgradeTo2Version.RunUpgradePerCompanyProcess();
+    // end;
+
+    local procedure OnUpgradePerCompanyToVersion_3_0_0_0()
     var
-        UpgradeTo2Version: Codeunit "AIR Upgrade To 2.0.0.0";
+        UpgradeTo3Version: Codeunit "AIR Upgrade To 3.0.0.0";
     begin
-        UpgradeTo2Version.RunUpgradePerCompanyProcess();
+        UpgradeTo3Version.RunUpgradePerCompanyProcess();
     end;
+
 
 }
 
