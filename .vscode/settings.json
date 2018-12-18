@@ -1,5 +1,6 @@
 {
-    "CRS.ObjectNamePrefix": "AIR ",
-    "CRS.RemovePrefixFromFilename": true,
-    "CRS.OnSaveAlFileAction": "Rename"
+    "al.codeAnalyzers": [
+        "${PerTenantExtensionCop}"
+    ],
+    "al.enableCodeAnalysis": true
 }
